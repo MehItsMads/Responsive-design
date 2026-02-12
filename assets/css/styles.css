@@ -1,5 +1,16 @@
-/* styles.css */
+:root {
+	/* CSS HEX */
+--tiger-flame: #fe5d26ff;
+--sunlit-clay: #f2c078ff;
+--pearl-beige: #faedcaff;
+--tea-green: #c1dbb3ff;
+--emerald: #7ebc89ff;
 
-* {
-	font-family: Arial;
+}
+
+html {
+	background-color: var(--lavender);
+}
+h1 {
+	color: var(--deep-teal);
 }
