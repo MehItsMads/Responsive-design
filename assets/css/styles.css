@@ -1,16 +1,19 @@
 :root {
-	/* CSS HEX */
---tiger-flame: #fe5d26ff;
---sunlit-clay: #f2c078ff;
---pearl-beige: #faedcaff;
---tea-green: #c1dbb3ff;
---emerald: #7ebc89ff;
 
+--deep-teal: #5a7d7cff;
+--lavender: #dadff7ff;
+--jet-black: #232c33ff;
+--powder-blue: #a0c1d1ff;
+--pale-slate: #b5b2c2ff;
 }
 
 body {
-	background-color: var(--lavender);
+background-color: var(--lavender);
 }
 h1 {
-	color: var(--deep-teal);
+  color: var(--deep-teal);
+}
+
+.col {
+  border: 1px solid red;
 }
