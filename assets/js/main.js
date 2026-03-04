@@ -1,13 +1,14 @@
 // main.js
-
 console.log("Hello, World!");
 
 const style = document.createElement("style");
-style.textContent =
+style.textContent = `
+  /* Hide default cursor */
   body {
     cursor: none;
   }
 
+  /* Custom rainbow cursor */
   .custom-cursor {
     position: fixed;
     width: 20px;
@@ -19,7 +20,7 @@ style.textContent =
     box-shadow: 0 0 10px 2px rgba(255,255,255,0.7);
     transition: background-color 0.1s linear;
   }
-;
+`;
 document.head.appendChild(style);
 
 const cursor = document.createElement("div");
