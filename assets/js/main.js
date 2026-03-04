@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
       pointer-events: none;
       z-index: 9999;
       transform: translate(-50%, -50%);
-      image-rendering: pixelated; /* makes cursor blocky */
+      image-rendering: pixelated; 
       box-shadow: 0 0 10px 2px rgba(255,255,255,0.7);
       transition: background-color 0.1s linear;
     }
@@ -37,6 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
       border-radius: 2px;
       image-rendering: pixelated;
       opacity: 0.8;
+      transition: opacity 0.5s linear;
     }
   `;
   document.head.appendChild(style);
@@ -73,12 +74,11 @@ document.addEventListener("DOMContentLoaded", () => {
     trail.style.top = cursorY + "px";
     trail.style.backgroundColor = `hsl(${hue}, 100%, 50%)`;
     document.body.appendChild(trail);
-    trails.push(trail);
 
-    if (trails.length > 50) {
-      const old = trails.shift();
-      old.remove();
-    }
+    setTimeout(() => {
+      trail.style.opacity = 0;
+      setTimeout(() => trail.remove(), 500);
+    }, 0);
 
     requestAnimationFrame(animateCursor);
   }
