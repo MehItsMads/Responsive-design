@@ -36,6 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
       border-radius: 2px;
       image-rendering: pixelated;
       opacity: 0;
+      transform: translate(-50%, -50%);
     }
   `;
   document.head.appendChild(style);
