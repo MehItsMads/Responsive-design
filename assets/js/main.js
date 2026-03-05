@@ -4,15 +4,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const style = document.createElement("style");
   style.textContent = `
-    body {
-      margin: 0;
-      height: 100vh;
-      cursor: none;
-      background:
-        linear-gradient(#ccc 1px, transparent 1px),
-        linear-gradient(90deg, #ccc 1px, transparent 1px);
-      background-size: 40px 40px;
-    }
 
     .custom-cursor {
       position: fixed;
