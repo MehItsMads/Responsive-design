@@ -18,14 +18,6 @@ body {
   cursor: none;
 }
 
-.custom-cursor {
-  position: fixed;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 9999;
-}
 h1 {
   color: var(--deep-teal);
 }
